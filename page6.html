@@ -1,85 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Love in Grade 7</title>
+    <title>My First Love in Grade 7 - CSS Box Model</title>
     <style>
         * {box-sizing: border-box;}
 
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            color: #ffffff;
-            background-color: #f3d5d8;
-            background-image: url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1600&q=80');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            background-size: cover;
+            padding: 0;
+            color: #4a2035;
+            background-color: #fff0f5;
         }
 
         header {
-            background-color: rgba(102, 35, 60, 0.88);
+            background-color: #f4b6c2;
+            margin: 25px;
+            padding: 35px 20px;
+            border: 4px solid #c2185b;
             text-align: center;
-            padding: 35px 15px;
+            border-radius: 15px;
         }
 
         header h1 {
-            margin: 0;
-            font-size: 36px;
+            color: #761344;
+            font-size: 34px;
+            margin: 0 0 12px;
         }
 
         header p {
+            color: #702b49;
+            margin: 0;
             font-size: 17px;
         }
 
         nav {
-            background-color: rgba(150, 55, 85, 0.9);
-            text-align: center;
+            margin: 20px 25px;
             padding: 15px;
+            border: 2px solid #e75480;
+            background-color: #fce4ec;
+            text-align: center;
+            border-radius: 10px;
         }
 
         nav a {
-            color: white;
+            color: #ad1457;
             text-decoration: none;
             font-weight: bold;
             margin: 0 12px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #e91e63;
         }
 
         main {
-            max-width: 850px;
-            margin: 35px auto;
-            padding: 30px;
-            background-color: rgba(45, 25, 40, 0.85);
-            border: 3px solid #f4b6c2;
-            border-radius: 18px;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 10px 25px;
         }
 
         section {
-            margin-bottom: 25px;
+            background-color: #ffffff;
+            margin: 25px 0;
+            padding: 25px;
+            border: 3px solid #f4b6c2;
+            border-left: 8px solid #c2185b;
+            border-radius: 12px;
             line-height: 1.8;
         }
 
         h2 {
-            color: #ffc0cb;
+            color: #c2185b;
+            margin-top: 0;
+            padding-bottom: 10px;
             border-bottom: 2px solid #f4b6c2;
-            padding-bottom: 8px;
         }
 
         .highlight {
-            color: #ffd6df;
+            color: #c2185b;
             font-weight: bold;
         }
 
         footer {
-            background-color: rgba(102, 35, 60, 0.9);
+            background-color: #880e4f;
+            margin-top: 40px;
+            padding: 25px;
+            border-top: 5px solid #f48fb1;
             text-align: center;
-            padding: 20px;
+            color: #ffffff;
+        }
+
+        footer p {
+            margin: 8px;
         }
 
         @media (max-width: 600px) {
-            header h1 {font-size: 28px;}
-            main {margin: 20px 12px; padding: 20px;}
-            nav a {display: inline-block; margin: 6px;}
+            header {margin: 12px; padding: 25px 15px;}
+            header h1 {font-size: 27px;}
+            nav {margin: 12px; padding: 12px;}
+            nav a {margin: 7px;}
+            main {padding: 8px 15px;}
+            section {padding: 18px; margin: 18px 0;}
         }
     </style>
 </head>
@@ -92,12 +115,12 @@
     <nav>
         <a href="#beginning">The Beginning</a>
         <a href="#story">What Happened</a>
-        <a href="#lesson">What I Learned</a>
+        <a href="#lesson">Life Lessons</a>
     </nav>
 
     <main>
         <section id="beginning">
-            <h2>How It All Started</h2>
+            <h2>01 | The Beginning</h2>
             <p>
                 When I was in Grade 7, I met someone who became my first love.
                 I liked her because she was <span class="highlight">intelligent and beautiful</span>.
@@ -107,7 +130,7 @@
         </section>
 
         <section id="story">
-            <h2>The Unexpected Moment</h2>
+            <h2>02 | What Happened</h2>
             <p>
                 One day, we stopped talking to each other for several days.
                 I became worried, so I went to her house to ask about her.
@@ -122,7 +145,7 @@
         </section>
 
         <section id="lesson">
-            <h2>What I Learned</h2>
+            <h2>03 | Life Lessons</h2>
             <p>
                 That experience taught me that love requires
                 <span class="highlight">honesty, trust, communication, and respect</span>.
@@ -139,7 +162,7 @@
 
     <footer>
         <p>Created by: Akiyo Marave</p>
-        <p>CSS Activity 3: Background</p>
+        <p>CSS Activity 4: Box Model</p>
         <p>Every experience teaches us something valuable.</p>
     </footer>
 </body>
