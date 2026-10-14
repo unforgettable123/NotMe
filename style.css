@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #252525;
+    background: linear-gradient(135deg, #fff0d9, #ffe0b2);
+}
+
+.main-header {
+    background: linear-gradient(135deg, #171717, #39302a);
+    color: #ffffff;
+    text-align: center;
+    padding: 35px 20px;
+    border-bottom: 6px solid #ff9800;
+}
+
+.main-header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 8px;
+}
+
+.main-header p {
+    color: #ffd180;
+    font-size: 1.1rem;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    background-color: #292929;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 9px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.main-nav a:hover {
+    background-color: #ff9800;
+    color: #171717;
+}
+
+main {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 0 18px;
+}
+
+.content-section {
+    background-color: #ffffff;
+    margin-bottom: 25px;
+    padding: 25px;
+    border: 2px solid #e0a04b;
+    border-radius: 14px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    color: #b85c00;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #ff9800;
+}
+
+.content-section p {
+    margin-bottom: 12px;
+}
+
+#home {
+    border-top: 6px solid #ff9800;
+}
+
+#about {
+    border-left: 6px solid #d97706;
+}
+
+#hobbies {
+    background-color: #fff8ed;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.feature-card {
+    padding: 18px;
+    background-color: #ffffff;
+    border: 2px solid #ff9800;
+    border-radius: 12px;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.feature-card h3 {
+    color: #b85c00;
+    margin-bottom: 10px;
+}
+
+.hobby-image {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    margin: 0 auto 18px;
+    padding: 8px;
+    background-color: #171717;
+    border: 2px solid #ff9800;
+    border-radius: 10px;
+}
+
+.basketball-card .hobby-image {
+    border-color: #ff9800;
+}
+
+.gaming-card {
+    border-color: #747fdb;
+}
+
+.gaming-card h3 {
+    color: #5146a8;
+}
+
+.gaming-card .hobby-image {
+    border-color: #747fdb;
+}
+
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.activity-link {
+    display: block;
+    padding: 14px;
+    color: #ffffff;
+    background-color: #333333;
+    border-left: 5px solid #ff9800;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.activity-link:hover {
+    background-color: #ff9800;
+    color: #171717;
+    transform: translateY(-2px);
+}
+
+#goals ul {
+    padding-left: 25px;
+}
+
+#goals li {
+    margin-bottom: 8px;
+}
+
+.main-footer {
+    background-color: #171717;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+    border-top: 6px solid #ff9800;
+}
+
+.main-footer p {
+    margin-bottom: 6px;
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 9px 16px;
+    background-color: #ff9800;
+    color: #171717;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.back-to-top:hover {
+    background-color: #ffd180;
+}
+
+@media (max-width: 600px) {
+    .main-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .feature-grid,
+    .link-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-section {
+        padding: 18px;
+    }
+
+    .hobby-image {
+        height: 190px;
+    }
+
+    .main-nav {
+        position: static;
+    }
+}
